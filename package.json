@@ -1,0 +1,10 @@
+{
+  "name": "async-examples",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Piotr Karpala <pkarpala@infusion.com>",
+  "license": "MIT",
+  "dependencies": {
+    "got": "^8.0.3"
+  }
+}
