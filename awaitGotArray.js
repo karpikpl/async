@@ -11,9 +11,7 @@ function sleep(ms) {
 (async () => {
 
     const start = new Date();
-    const a = await sleep(2000)
-    const b = await sleep(500)
-    const c = await sleep(5)
+    const [a, b, c] = [await sleep(2000), await sleep(500), await sleep(5)];
 
     console.log(`sleeping done - got ${a} ${b} ${c} in ${new Date()-start}`);
 })();
