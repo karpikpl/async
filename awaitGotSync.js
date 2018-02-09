@@ -12,6 +12,8 @@ function get(id) {
 
 (async () => {
 
+    console.log('This will be executed in sync - one by one');
+
     const start = new Date();
     const a = await get(1)
     const b = await get(2)

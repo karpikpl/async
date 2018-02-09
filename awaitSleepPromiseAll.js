@@ -10,6 +10,8 @@ function sleep(ms) {
 
 (async () => {
 
+    console.log('This will be executed in parallel using Promise.all(...)');
+
     const start = new Date();
     const [a, b, c] = await Promise.all([sleep(2000), sleep(500), sleep(5)]);
 

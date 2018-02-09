@@ -12,6 +12,8 @@ function get(id) {
 
 (async () => {
 
+    console.log('This will be executed in parallel using Promise.all(...)');
+
     const start = new Date();
     const [a, b, c] = await Promise.all([get(1), get(2), get(3)]);
 

@@ -10,6 +10,8 @@ function sleep(ms) {
 
 (async () => {
 
+    console.log('This will be executed in sync - one by one');
+
     const start = new Date();
     const a = await sleep(2000)
     const b = await sleep(500)

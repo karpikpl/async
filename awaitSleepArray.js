@@ -10,6 +10,8 @@ function sleep(ms) {
 
 (async () => {
 
+    console.log('This will be executed in parallel - thanks to putting promises in the array');
+
     const start = new Date();
     const aPromise = sleep(2000);
     const bPromise = sleep(500);
